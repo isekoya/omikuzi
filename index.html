@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>おみくじ作ってみた</title>
+    <link rel="icon" type="image/ico" href="favicon.png">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="top-heading">おみくじ作ってみた</h1>
+      <div class="lottery">
+        <p class="contents" id="contents"></p>
+      </div>
+      <button class="btn"  onclick="Omikuji();">おみくじを引く</button>
+    </div>
+  
+    <script src="js/omikuzi.js"></script>
+  </body>
+  <style>
+    body {
+      font-family: "Yomogi", cursive;
+      color:#A37A00;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .top-heading {
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .lottery {
+      background-color: #FFBF00;
+      width: 80px;
+      height: 150px;
+      margin: auto;
+      border: double 7px #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .contents {
+      writing-mode: vertical-rl;
+      margin: 0 auto 5px;
+      font-size: 3rem;
+      line-height: 1;
+      color: #5F5710;      
+    }
+
+    .btn {
+      margin: 30px auto 0;
+      width: 150px;
+      height: 30px;
+      display: block;
+      background: #EDDA36;
+      border: outset 3px #D6C429;
+      border-radius: 10px;
+      color: #5F5710;
+    }
+
+    .btn:active {
+      scale: 0.97;
+      border: none;
+    }
+
+  </style>
+</html>
